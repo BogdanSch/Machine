@@ -1,4 +1,4 @@
-import { Machine } from "./machine.js";
+import { Machine } from "../../js/machine.js";
 import { Drink } from "./drink.js";
 
 export class CoffeeMachine extends Machine {
