@@ -6,10 +6,11 @@ export class Machine {
     this.interval = null;
     this.alertHandler = alertHandler;
   }
+
   run() {
     this.state = "started";
-    this.alertHandler("Починаю роботу...");
-    this.alertHandler("Час приготування - " + this.time + " ");
+    this.alertHandler("Starting operation... ");
+    this.alertHandler("Preparation time - " + this.time + " ");
     this.interval = setInterval(
       function () {
         this.alertHandler(" | ");
@@ -19,18 +20,18 @@ export class Machine {
     this.timer = setTimeout(this.onReady.bind(this), this.time);
     this.alertHandler(this.state);
   }
+
   onReady() {
     clearInterval(this.interval);
     clearTimeout(this.timer);
-    this.alertHandler("Готово! ");
+    this.alertHandler(". Ready!");
     this.state = "stopped";
-    this.alertHandler(this.state);
   }
+
   stop() {
     clearInterval(this.interval);
     clearTimeout(this.timer);
-    this.alertHandler("Примусове вимкнення!");
+    this.alertHandler("Forced shutdown!");
     this.state = "stopped";
-    this.alertHandler(this.state);
   }
 }

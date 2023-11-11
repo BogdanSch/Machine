@@ -13,17 +13,6 @@ function alertHandler(message) {
   outputElement.textContent += message;
 }
 
-// function getDrinkPreparationTime(drinkName) {
-//   switch (drinkName) {
-//     case "water":
-//       return 2000;
-//     case "latte":
-
-//     default:
-//       throw new Error("Sorry, don't have this drink yet:(");
-//   }
-// }
-
 drinks.forEach((drink) => {
   drink.addEventListener("click", (event) => {
     if (coffeeMachine.state !== "started") {
@@ -34,13 +23,6 @@ drinks.forEach((drink) => {
     }
   });
 });
-
-// startButton.addEventListener("click", () => {
-//   let drinkName = drinkNameInput.value;
-//   coffeeMachine = new CoffeeMachine(new Drink(drinkName), alertHandler);
-//   coffeeMachine.run(new Drink("Latte", 4000));
-//   outputElement.textContent = "";
-// });
 
 stopButton.addEventListener("click", () => {
   coffeeMachine.stop();

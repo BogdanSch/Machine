@@ -11,7 +11,7 @@ export class Multivariate extends Machine {
       this.food = food;
     }
     this.time = this.food.time;
-    this.alertHandler(`Приготування ${this.food.name}`);
+    this.alertHandler(`Cooking soup ${this.food.name}. `);
     this.run();
   }
 
@@ -20,7 +20,7 @@ export class Multivariate extends Machine {
       this.food = food;
     }
     this.time = this.food.time;
-    this.alertHandler(`Приготування ${this.food.name}`);
+    this.alertHandler(`Stewing ${this.food.name}. `);
     this.run();
   }
 
@@ -29,7 +29,7 @@ export class Multivariate extends Machine {
       this.food = food;
     }
     this.time = this.food.time;
-    this.alertHandler(`Приготування ${this.food.name}`);
+    this.alertHandler(`Baking ${this.food.name}. `);
     this.run();
   }
 }

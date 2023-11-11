@@ -1,6 +1,6 @@
 /* Drinks - Start */
 
-.drinks__list {
+.food__list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -8,18 +8,18 @@
     column-gap: 5px;
 }
 
-.drinks__item {
+.food__item {
     transition: all 0.5s ease;
-    width: 30%;
+    width: 32%;
     margin-bottom: 5px;
 }
 
-.drinks__item:hover {
+.food__item:hover {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.drinks__image {
+.food__image {
     max-width: 80%;
     display: block;
     margin: 0 auto;
@@ -29,8 +29,12 @@
     font-size: 20px;
 }
 
+.btn-stop:hover {
+    cursor: pointer;
+}
+
 @media (max-width: 576px) {
-    .drinks__item {
+    .food__item {
         min-width: 100%;
     }
 }
