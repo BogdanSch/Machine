@@ -1,0 +1,32 @@
+/* Drinks - Start */
+
+.drinks__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 5px;
+}
+
+.drinks__item {
+    width: 30%;
+    margin-bottom: 4px;
+}
+
+.drinks__image{
+    max-width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.output{
+    font-size: 20px;
+}
+
+@media (max-width: 576px) {
+    .drinks__item {
+        min-width: 100%;
+    }
+}
+
+/* Drinks - End */

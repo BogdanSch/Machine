@@ -10,8 +10,8 @@ export class Multivariate extends Machine {
     if (food !== undefined) {
       this.food = food;
     }
-    this.time = food.time;
-    this.alertHandler(`Приготування ${food.name}`);
+    this.time = this.food.time;
+    this.alertHandler(`Приготування ${this.food.name}`);
     this.run();
   }
 
@@ -19,8 +19,8 @@ export class Multivariate extends Machine {
     if (food !== undefined) {
       this.food = food;
     }
-    this.time = food.time;
-    this.alertHandler(`Приготування ${food.name}`);
+    this.time = this.food.time;
+    this.alertHandler(`Приготування ${this.food.name}`);
     this.run();
   }
 
@@ -28,8 +28,8 @@ export class Multivariate extends Machine {
     if (food !== undefined) {
       this.food = food;
     }
-    this.time = food.time;
-    this.alertHandler(`Приготування ${food.name}`);
+    this.time = this.food.time;
+    this.alertHandler(`Приготування ${this.food.name}`);
     this.run();
   }
 }
